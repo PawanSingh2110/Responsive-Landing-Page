@@ -1,0 +1,250 @@
+.navber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 90%;
+    margin: 0 auto;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+.nav-cont{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.main{
+    
+    display: flex;
+    gap:20px;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    visibility: hidden;
+    
+}
+
+.header details{
+    position: relative;
+}
+
+.header details ul{
+    position: absolute;
+     top: 100%;
+    left: 0;
+    width: max-content;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    
+}
+.header details ul li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: flex ;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.header details summary{
+    display: flex;
+    list-style: none;
+    color: rgba(128, 128, 128, 0.824);
+}
+.header details summary:hover{
+    color: black;
+   
+}
+.header details summary svg{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.header details ul li:hover{
+    background-color: #f0f2fb;
+}
+
+
+.company details{
+    position: relative;
+}
+
+.company details ul{
+    position: absolute;
+     top: 100%;
+    left: 0;
+    width: max-content;
+    padding: 1px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.company details ul li{
+    list-style: none;
+    margin-right: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: flex ;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.company details summary{
+    display: flex;
+    list-style: none;
+    transition: all;
+    color: rgba(128, 128, 128, 0.824);
+}
+.company details summary:hover{
+ color: black;
+}
+.company details summary svg{
+margin-left: 5px;
+margin-top: 7px;
+
+}
+
+
+
+.company details ul li:hover{
+    background-color: #f0f2fb;
+}
+
+.main p{
+    color: rgba(128, 128, 128, 0.824);
+    
+
+}
+.main p:hover{
+    color: black;
+    
+
+}
+
+
+
+.btn{
+    padding: 10px 10px;
+    display: flex;
+    gap:10px;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+
+.btn-1{
+    border: none;
+    padding: 0px 5px;
+    background: transparent;
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.824);
+    
+}
+
+.btn-2{
+    border: none;
+    padding: 0px 5px;
+    background: transparent;
+    color: rgba(128, 128, 128, 0.824);
+}
+
+
+.btn-1:hover{
+    border: 1px solid orange;
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+}
+.btn-2:hover{
+    border: 1px solid orangered;
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+    
+}
+
+@media (min-width: 768px){
+    .company details ul{
+        top: 140%;
+        left: 50px;
+    }
+    .company details ul li{
+        font-size: 10px;
+        gap: 5px;
+
+    }
+    .main{
+        visibility: visible;
+    }
+
+    .btn{
+        visibility: visible;
+    }
+   
+
+}
+
+
+
+@media (min-width: 1024px){
+    .company details ul{
+        padding: 10px 20px;
+    }
+
+    .company details summary svg{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .company details ul li{
+        font-size: 20px;
+        gap: 5px;
+    }
+
+    .company details ul{
+        top: 140%;
+        left: 50px;
+    }
+    .header details ul{
+        padding: 10px 20px;
+    }
+
+    .header details summary svg{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .header details ul li{
+        font-size: 20px;
+        gap: 5px;
+    }
+
+    .header details ul{
+        top: 140%;
+        left: 0px;
+    }
+
+    .header details ul li svg{
+        margin-right:5px ;
+        margin-top: 10px;
+    }
+
+   
+
+}
+
+
+
+
+
+
+
+
+
+
